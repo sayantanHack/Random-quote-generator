@@ -1,0 +1,26 @@
+.contain{
+    margin-top: 60px;
+    text-align: center;
+}
+
+h1{
+    color: cornflowerblue;
+    padding: 10px;
+}
+p{
+    padding: 6px;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 6px;
+    margin: 10px;
+}
+.quote-box{
+    padding: 13px;
+    margin: 36px;
+    align-items: center;
+    width: 25em;
+    display: flexbox;
+    border: 3px solid royalblue;
+}
