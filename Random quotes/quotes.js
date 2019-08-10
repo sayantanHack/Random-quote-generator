@@ -4,7 +4,7 @@ var author = ['Ram Sukla', 'Krishna Gupta','Joy Roy','Sam Patro'];
 
 newQuote(quotes,author);
 
-dsocument.getElementById('nxtqt').click(function(){
+document.getElementById('nxtqt').click(function(){
     newQuote(quotes,author);
     
 });
