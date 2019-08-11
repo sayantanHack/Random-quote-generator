@@ -5,13 +5,21 @@
 
 h1{
     color: cornflowerblue;
-    padding: 10px;
+    
+    font-size: 60px;
 }
 p{
-    padding: 6px;
+    padding-bottom: 6px;
     font-size: 25px;
 }
-
+a{
+    background-color: rgb(132, 49, 165);
+    border-radius: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 7px;
+}
 .btn{
     padding: 6px;
     margin: 10px;
@@ -19,8 +27,12 @@ p{
 .quote-box{
     padding: 13px;
     margin: 36px;
-    align-items: center;
-    width: 25em;
+    
+    width: 30em;
+    height: auto;
+    margin: 10px auto;
     display: flexbox;
-    border: 3px solid royalblue;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 20px;
 }

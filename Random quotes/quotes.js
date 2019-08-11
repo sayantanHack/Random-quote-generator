@@ -1,53 +1,29 @@
-/*
-var quotes = ['Sun','is','star','planet','Life','a','war','game','lights'];
+var quotes = [ ['Sun','Star','Planet','Life'],
+                ['is moving', 'is greater than', 'is not smaller than','is always changing on'],
+                ['war.','game.','lights.','facts.']
+            ];
 
-var author = ['Ram Sukla', 'Krishna Gupta','Joy Roy','Sam Patro'];
+var author = ['Ram Sukla', 'Krishna Gupta','Joy Roy','Sam Patro','John Brien'];
 
-newQuote(quotes,author);
 
-document.getElementById('nxtqt').click(function(){
-    newQuote(quotes,author);
-    
-});
-
-function newQuote(q,a){
-    qtNum = Math.floor(Math.random() * quotes.length);
-    authNum = Math.floor(Math.random() * author.length);
-    document.getElementById('qt').text('" '+ q[qtNum] + ' "');
-    dsocument.getElementById('auth').text('" '+ a[authNum] + ' "');
-
-}
-*/
-
-var quotes = ['Sun','is','star','planet','Life','a','war','game','lights'];
-
-var author = ['Ram Sukla', 'Krishna Gupta','Joy Roy','Sam Patro'];
-
-newQuote(quotes,author);
-
-dsocument.getElementById('nxtqt').click(function(){
-    newQuote(quotes,author);
-    
-});
-
-function newQuote(q,a){
+function newQuote(){
     //qtNum = Math.floor(Math.random() * quotes.length);
     authNum = Math.floor(Math.random() * author.length);
-    var n=4;
+    var n=quotes.length;
     var quote=[];
-
-    for (var i =0; i<=n; i++){
-        qtNum = Math.floor(Math.random() * quotes.length);
-        quote.push(q[qtNum]);
-        console.log(q[qtNum]);
+    
+    for (var i =0; i< n; i++){
+        qtNum = Math.floor(Math.random() * quotes[i].length);
+        quote.push(quotes[i][qtNum]);
+        console.log(quotes[i][qtNum]);
       }
     
     var newQ = quote.slice(0, quote.length).join(' ');
       console.log(newQ);
     
 
-    return(alert(newQ)); 
-    document.getElementById('qt').text(newQ);
-    document.getElementById('auth').text( a[authNum] );
+    document.getElementById('qt').innerHTML= newQ;
+    document.getElementById('auth').innerHTML = author[authNum] ;
 
 }
+
