@@ -11,6 +11,8 @@ function newQuote(){
     authNum = Math.floor(Math.random() * author.length);
     var n=quotes.length;
     var quote=[];
+    
+
     for(var j=0;j<5;j++){
         for (var i =0; i< n; i++){
             qtNum = Math.floor(Math.random() * quotes[i].length);
